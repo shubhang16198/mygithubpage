@@ -43,3 +43,18 @@ div#menu li{
 .random_motion{
 	
 }
+@keyframes flicker{
+	50%{
+		color: red;
+	}
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	animation: none;
+}
+a:hover{
+	animation: flicker;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
