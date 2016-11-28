@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Over+the+Rainbow');
+
 *{
 	background-color: #e0ebe8;
 }
 h1#header{
+	font-family: 'Over the Rainbow', cursive;
+	color: #4AB19A;
+	letter-spacing: 10px;
+	font-size: 80px
+}
+h1#beforeheader{
 	font-family: 'Over the Rainbow', cursive;
 	color: #4AB19A;
 	letter-spacing: 10px;
@@ -27,4 +34,12 @@ h1#header{
 .visible{
 	opacity: 1;-moz-opacity: 1;-ms-opacity: 1;-o-opacity: 1;-webkit-opacity: 1;
 	filter: alpha(opacity=100);
+}
+div#menu li{
+	list-style: none;
+	display: inline;
+	color: #121212;
+}
+.random_motion{
+	
 }

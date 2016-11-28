@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
@@ -11,19 +12,25 @@
 			<img src="img/logo.png" height="200px;">
 		</div>
 		<center>
+			<h1 id="beforeheader" class="hidden_swipe_up" style="margin-bottom: 0px !important;">Hi</h1>
 			<h1 id="header" class="hidden_swipe_up">I'm Shubhang</h1>
 		</center>
-		<div id="top-menu" align="center">
-			
+		<div id="menu" align="center"><br>
+			<li style="margin-right: 10%; font-size: 50px;" class="random_motion"><i class="fa fa-user" aria-hidden="true"></i></li>
+			<li style="font-size: 50px;" class="random_motion">_<i class="fa fa-pencil" aria-hidden="true"></i></li>
+			<li style="font-size: 50px; margin-left: 10%;" class="random_motion"><i class="fa fa-address-book" aria-hidden="true"></i></li><br>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				header = $("#header");
-				header.removeClass("hidden_swipe_up");
-				header.addClass("visible_swipe_up");
 				logo = $("#logo");
 				logo.removeClass("hidden");
 				logo.addClass("visible");
+				header = $("#header");
+				header.removeClass("hidden_swipe_up");
+				header.addClass("visible_swipe_up");
+				beforeheader = $("#beforeheader");
+				beforeheader.removeClass("hidden_swipe_up");
+				beforeheader.addClass("visible_swipe_up").delay(1000);
 			});
 		</script>
 	</body>
