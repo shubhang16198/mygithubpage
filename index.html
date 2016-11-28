@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Shubhang Sati</title>
-</head>
-<body>
-<header><h1>Hi, I am Shubhang Sati</h1></header>
-</body>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+		<title>Shubhang Sati</title>
+	</head>
+	<body>
+		<div id="logo" align="center" class="hidden" style="-webkit-transition: all 1s ease;">	
+			<img src="img/logo.png" height="200px;">
+		</div>
+		<center>
+			<h1 id="header" class="hidden_swipe_up">I'm Shubhang</h1>
+		</center>
+		<div id="top-menu" align="center">
+			
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				header = $("#header");
+				header.removeClass("hidden_swipe_up");
+				header.addClass("visible_swipe_up");
+				logo = $("#logo");
+				logo.removeClass("hidden");
+				logo.addClass("visible");
+			});
+		</script>
+	</body>
 </html>
