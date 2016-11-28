@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		 <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
 		<title>Shubhang Sati</title>
 	</head>
 	<body>
-		<div id="logo" align="center" class="hidden" style="-webkit-transition: all 1s ease;">	
-			<img src="img/logo.png" height="200px;">
-		</div>
-		<center>
-			<h1 id="beforeheader" class="hidden hidden_swipe_up" style="margin-bottom: 0px !important;">Hi</h1>
-			<h1 id="header" class="hidden_swipe_up">I'm Shubhang</h1>
-		</center>
-		<div id="menu" align="center" class="hidden"><br>
-			<li style="margin-right: 10%; font-size: 50px;" class="random_motion"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-			<li style="font-size: 50px;" class="random_motion"><a href="http://bashhungasit.wordpress.com">_<i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-			<li style="font-size: 50px; margin-left: 10%;" class="random_motion"><i class="fa fa-address-book" aria-hidden="true"></i></li><br>
+		<div id="wrapper">
+			<div id="logo" align="center" class="hidden" style="-webkit-transition: all 1s ease;">	
+				<img id="logoimg" src="img/logo.png" height="200px;">
+			</div>
+			<center>
+				<h1 id="beforeheader" class="hidden hidden_swipe_up" style="margin-bottom: 0px !important;">Hi</h1>
+				<h1 id="header" class="hidden_swipe_up" style="margin-bottom: 0px !important">I'm Shubhang</h1>
+				<span id="aprog" class="hidden_swipe_up hidden" style="font-family: 'Swanky and Moo Moo', cursive; color: #4AB19A; font-size:200%">A programmer</span><br>
+			</center>
+			<br><br>
+			<div id="menu" align="center" class="hidden"><br>
+				<li style="margin-right: 10%; font-size: 50px;" class="tooltip"><a href="#"><span class="tooltiptext" style="font-size: 20px;">About</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				<li style="font-size: 50px;" class="tooltip"><span class="tooltiptext" style="font-size: 20px;">Blog</span><a href="http://bashhungasit.wordpress.com">_<i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+				<li style="font-size: 50px; margin-left: 10%;" class="tooltip"><span class="tooltiptext" style="font-size: 20px;">Contact</span><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li><br><br><br><br>
+			</div>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -37,10 +42,17 @@
 					header.removeClass("hidden_swipe_up");
 					header.addClass("visible_swipe_up");
 					setTimeout(function(){
+						aprog = $("#aprog");
+						aprog.removeClass("hidden_swipe_up");
+						aprog.removeClass("hidden");
+						aprog.addClass("visible_swipe_up")
+						aprog.addClass("visible");
+					}, 500);
+					setTimeout(function(){
 						menu = $("#menu");
 						menu.addClass("visible");
-					}, 500);
-				}, 1500);
+					}, 1500);
+				}, 1000);
 				//header.addClass("visible_swipe_up");
 			});
 		</script>
