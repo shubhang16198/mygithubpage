@@ -31,7 +31,7 @@ h1#beforeheader{
 }
 .hidden{
 	opacity: 0;-moz-opacity: 0;-ms-opacity: 0;-o-opacity: 0;-webkit-opacity: 0;
-	filter: alpha(opacity=50);
+	filter: alpha(opacity=0);
 	-webkit-transition:all 2s ease;
 }
 .visible{
@@ -55,6 +55,14 @@ a{
 	text-decoration: none;
 	color: inherit;
 	animation: none;
+}
+#menu li{
+	cursor: pointer;
+}
+#menu li:hover{
+	animation: flicker;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
 }
 a:hover{
 	animation: flicker;
@@ -130,7 +138,7 @@ a:hover{
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -60px;
 }
 .tooltip2:hover .tooltiptext {
     opacity: 1;-moz-opacity: 1;-ms-opacity: 1;-o-opacity: 1;-webkit-opacity: 1;
