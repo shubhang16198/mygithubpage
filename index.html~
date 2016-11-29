@@ -106,7 +106,7 @@
 				
 				setTimeout(function(){
 					$("#content").removeClass("hidden");
-					$("#content").html('<div align="center"><a style="padding:5px;margin:10px; background-color:white; font-family:Strait, sans-serif; font-size: 20px; border-radius: 10px;" href="http://www.codechef.com/users/shubhangsati">Codechef</a><a style="padding:5px;margin:10px; background-color:white; font-family:Strait, sans-serif; font-size: 20px; border-radius: 10px;" href="http://www.codeforces.com/profile/Shubhang.Sati">Codeforces</a></div>');
+					$("#content").html('<div align="center"><a style="padding:5px;margin:10px; background-color:white; font-family:Strait, sans-serif; font-size: 20px; border-radius: 10px;" href="http://www.codechef.com/users/shubhangsati">Codechef</a><a style="padding:5px; background-color:white; font-family:Strait, sans-serif; font-size: 20px; border-radius: 10px;" href="http://www.codeforces.com/profile/Shubhang.Sati">Codeforces</a></div>');
 					$("#content").addClass("visible");
 				}, 1000);
 			})
